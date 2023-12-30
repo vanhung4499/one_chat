@@ -2,14 +2,16 @@
 
 ## Introduction
 
-An simple ChatGPT mobile application built with Flutter.
+An simple AI Chat application built with Flutter. 
+This app uses the [OpenAI API](https://beta.openai.com/docs/introduction) to chat with GPT-3.5 and GPT-4.
+Google Bard and Google Gemini will be added soon.
 
 ## Features
 
 - [x] Chat with GPT-3.5
 - [x] Chat with GPT-4
-- [] Chat with Google Bard
-- [] Chat with Google Gemini
+- [ ] Chat with Google Bard
+- [ ] Chat with Google Gemini
 - [x] Helpful prompts to get you started
 - [x] Chat sessions
 - [x] Edit the chat session options (temperature, count, model, etc.)
@@ -30,6 +32,19 @@ I used the following main framework and libraries to build this app:
 - [flutter_localizations](https://pub.dev/packages/flutter_localizations) for internationalization
 - [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) for app icons
 
+## Build and Run
+
+```bash
+# Clone the repo
+git clone https://github.com/vanhung4499/one_chat
+# Go to the project root directory
+cd one_chat
+# Install dependencies
+flutter pub get
+# Run the app
+flutter run
+```
+
 ## Project Structure
 
 ```bash
@@ -47,15 +62,14 @@ lib
 └── widgets          # Widgets used in pages
 ```
 
-## Build and Run
+## Demo
 
-```bash
-# Clone the repo
+### Video
 
-```
+- [Demo Video](https://drive.google.com/file/d/1gaBdeo54ZvZDqqwL7acVEmqFgCgD-D6s/view?usp=sharing)
+  - Because of the size of the video, I cannot upload it to Youtube. Please watch it on Google Drive. Thanks!
 
-
-## Screenshots
+### Screenshots
 
 | Chat                                   | Settings                                           | OpenAI API Key                                              |
 |----------------------------------------|----------------------------------------------------|-------------------------------------------------------------|
@@ -66,8 +80,22 @@ lib
 | ![Chat](./assets/screenshots/chat.png) | ![Settings](./assets/screenshots/app-settings.png) | ![OpenAI API Key](./assets/screenshots/api-key-setting.png) |
 
 
+## TODO
+
+- Add more prompts
+- Implement Google Bard and Google Gemini chat
+- Implement image generation chat with DALL-E
+- etc.
 
 ## References
+- [OpenAI API](https://beta.openai.com/docs/introduction)
+- [OpenAI API Playground](https://beta.openai.com/playground)
+- [Flutter](https://flutter.dev/)
+- [GetX](https://pub.dev/packages/get)
+- [Dio](https://pub.dev/packages/dio)
+- [Isar](https://pub.dev/packages/isar)
+- [RxDart](https://pub.dev/packages/rxdart)
+- [Dart OpenAI](https://pub.dev/packages/dart_openai)
 
 
 
